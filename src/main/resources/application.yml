@@ -1,0 +1,13 @@
+#配置数据源
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/blog?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+#指定mybatis映射文件的地址
+mybatis:
+  configuration:
+    #    查询出的字段下划线转驼峰
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*.xml

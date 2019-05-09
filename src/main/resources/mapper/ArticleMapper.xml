@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.example.blog.repository.ArticleRepository">
+    <insert id="insertOneArticle" parameterType="com.example.blog.entity.Article">
+        insert into article(a_id,title,content) values(null ,#{article.title},#{article.content})
+    </insert>
+    <delete id="deleteOneArticleById" parameterType="int">
+        delete from article where a_id = #{aid}
+    </delete>
+    <select id="queryArticleList" resultType="com.example.blog.entity.Article">
+        select * from article
+    </select>
+</mapper>
