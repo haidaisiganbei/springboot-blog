@@ -36,7 +36,7 @@ public class ArticleController {
 
    @RequestMapping("/insert")
     public Integer insertArticle( @RequestBody Article article){
-        log.debug(article.toString());
+
         return articleRepository.insertOneArticle(article);
     }
 

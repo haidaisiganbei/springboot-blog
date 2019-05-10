@@ -1,13 +1,13 @@
-#ÅäÖÃÊı¾İÔ´
+#é…ç½®æ•°æ®åº“
 spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/blog?useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
-#Ö¸¶¨mybatisÓ³ÉäÎÄ¼şµÄµØÖ·
+#é…ç½®mybatis
 mybatis:
   configuration:
-    #    ²éÑ¯³öµÄ×Ö¶ÎÏÂ»®Ïß×ªÍÕ·å
     map-underscore-to-camel-case: true
   mapper-locations: classpath:mapper/*.xml
+#é…ç½®
